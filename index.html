@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ariane Archanjo — Front-End Developer</title>
+  <meta name="description" content="Portfolio de Ariane Archanjo, desenvolvedora front-end e estudante de Engenharia de Software." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===================== CURSOR PERSONALIZADO ===================== -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo" aria-label="Início">
+        <span class="logo-bracket">[</span>AA<span class="logo-bracket">]</span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link" data-text="Sobre">Sobre</a></li>
+        <li><a href="#skills" class="nav-link" data-text="Skills">Skills</a></li>
+        <li><a href="#projects" class="nav-link" data-text="Projetos">Projetos</a></li>
+        <li><a href="#experience" class="nav-link" data-text="Experiência">Experiência</a></li>
+        <li><a href="#contact" class="nav-link" data-text="Contato">Contato</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <!-- Botão Dark/Light Mode -->
+        <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema">
+          <i class="fas fa-moon" id="themeIcon"></i>
+        </button>
+        <!-- Menu hamburguer (mobile) -->
+        <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-glow"></div>
+
+    <div class="hero-content">
+      <div class="hero-tag reveal">
+        <span class="dot"></span> Aberta a freelas &amp; open source
+      </div>
+
+      <h1 class="hero-name reveal">
+        <span class="line">Ariane</span>
+        <span class="line accent">Archanjo</span>
+      </h1>
+
+      <p class="hero-title reveal">
+        <span class="typed-text" id="typedText"></span><span class="typed-cursor">|</span>
+      </p>
+
+      <p class="hero-desc reveal">
+        Desenvolvedora front-end com experiência em sistemas reais para gestão pública. 
+        Estudo Engenharia de Software e construo interfaces que fazem sentido — para pessoas de verdade.
+      </p>
+
+      <div class="hero-cta reveal">
+        <a href="#contact" class="btn btn-primary">
+          <i class="fas fa-paper-plane"></i> Entre em contato
+        </a>
+        <a href="#projects" class="btn btn-ghost">
+          <i class="fas fa-code"></i> Ver projetos
+        </a>
+      </div>
+
+      <div class="hero-stats reveal">
+        <div class="stat">
+          <span class="stat-num" data-target="3">0</span>
+          <span class="stat-label">Semestres de<br>Eng. Software</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="1">0</span>
+          <span class="stat-label">Estágio em<br>andamento</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="10">0</span>
+          <span class="stat-label">Cursos<br>concluídos</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===================== SOBRE ===================== -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-label reveal">
+        <span>// 01</span> sobre mim
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text">
+          <h2 class="section-title reveal">
+            Código limpo.<br><span class="accent">Impacto real.</span>
+          </h2>
+          <div class="about-body reveal">
+            <p>
+              Sou desenvolvedora front-end com experiência em projetos reais — não só tutoriais. 
+              Atualmente curso o 3º semestre de <strong>Engenharia de Software</strong> na Unibrasil 
+              e já passei por estágios onde o código precisava funcionar de verdade, para pessoas de verdade.
+            </p>
+            <p>
+              Hoje atuo na <strong>Prefeitura de Campina Grande do Sul</strong>, desenvolvendo sistemas 
+              municipais com <strong>Next.js</strong>. Antes, construí sistemas internos com banco de dados 
+              <strong>PostgreSQL</strong> na Cidade Júnior — incluindo contribuição em módulo financeiro 
+              e publicação científica nos Anais do EVINCI.
+            </p>
+            <p>
+              Gosto de código limpo, interfaces que fazem sentido e soluções que escalam.
+            </p>
+          </div>
+          <a href="/cdn-cgi/l/email-protection#0667746f676863286774656e67686c693746616b676f6a2865696b" class="btn btn-primary reveal">
+            <i class="fas fa-download"></i> Solicitar currículo
+          </a>
+        </div>
+
+        <div class="about-card-wrap reveal">
+          <div class="about-card">
+            <div class="card-line"></div>
+            <div class="card-inner">
+              <div class="card-row">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Curitiba / PR, Brasil</span>
+              </div>
+              <div class="card-row">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Eng. Software — Unibrasil</span>
+              </div>
+              <div class="card-row">
+                <i class="fas fa-briefcase"></i>
+                <span>Prefeitura de Campina Grande do Sul</span>
+              </div>
+              <div class="card-row">
+                <i class="fas fa-flask"></i>
+                <span>Publicação científica — EVINCI 2025</span>
+              </div>
+              <div class="card-row">
+                <i class="fas fa-trophy"></i>
+                <span>3× Menção Honrosa OBMEP</span>
+              </div>
+              <div class="card-row">
+                <i class="fas fa-circle" style="color: var(--green); font-size: 0.5rem;"></i>
+                <span>Freela &amp; open source — não CLT/estágio</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SKILLS ===================== -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="section-label reveal">
+        <span>// 02</span> skills
+      </div>
+      <h2 class="section-title reveal">Minha <span class="accent">stack</span></h2>
+
+      <div class="skills-grid">
+
+        <!-- Frontend -->
+        <div class="skill-group reveal">
+          <h3 class="skill-group-title">
+            <i class="fas fa-layer-group"></i> Frontend
+          </h3>
+          <div class="skill-list">
+            <div class="skill-item">
+              <i class="fab fa-html5"></i>
+              <span>HTML5</span>
+              <div class="skill-bar"><div class="skill-fill" data-w="90"></div></div>
+            </div>
+            <div class="skill-item">
+              <i class="fab fa-css3-alt"></i>
+              <span>CSS3</span>
+              <div class="skill-bar"><div class="skill-fill" data-w="85"></div></div>
+            </div>
+            <div class="skill-item">
+              <i class="fab fa-js"></i>
+              <span>JavaScript</span>
+              <div class="skill-bar"><div class="skill-fill" data-w="78"></div></div>
+            </div>
+            <div class="skill-item">
+              <i class="fab fa-react"></i>
+              <span>React / Next.js <span style="font-size:0.65rem; color: var(--text-muted);">(básico)</span></span>
+              <div class="skill-bar"><div class="skill-fill" data-w="35"></div></div>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-code"></i>
+              <span>TypeScript <span style="font-size:0.65rem; color: var(--text-muted);">(básico)</span></span>
+              <div class="skill-bar"><div class="skill-fill" data-w="28"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Backend & DB -->
+        <div class="skill-group reveal">
+          <h3 class="skill-group-title">
+            <i class="fas fa-server"></i> Backend & Banco de Dados
+          </h3>
+          <div class="skill-list">
+            <div class="skill-item">
+              <i class="fas fa-code"></i>
+              <span>C#</span>
+              <div class="skill-bar"><div class="skill-fill" data-w="72"></div></div>
+            </div>
+            <div class="skill-item">
+              <i class="fab fa-php"></i>
+              <span>PHP <span style="font-size:0.65rem; color: var(--text-muted);">(aprendendo)</span></span>
+              <div class="skill-bar"><div class="skill-fill" data-w="22"></div></div>
+            </div>
+            <div class="skill-item">
+              <i class="fab fa-node-js"></i>
+              <span>Node.js</span>
+              <div class="skill-bar"><div class="skill-fill" data-w="55"></div></div>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-database"></i>
+              <span>PostgreSQL</span>
+              <div class="skill-bar"><div class="skill-fill" data-w="68"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ferramentas -->
+        <div class="skill-group reveal">
+          <h3 class="skill-group-title">
+            <i class="fas fa-tools"></i> Ferramentas
+          </h3>
+          <div class="skill-list">
+            <div class="skill-item" data-level="85">
+              <i class="fab fa-git-alt"></i>
+              <span>Git & GitHub</span>
+              <div class="skill-bar"><div class="skill-fill" data-w="85"></div></div>
+            </div>
+            <div class="skill-item" data-level="78">
+              <i class="fab fa-figma"></i>
+              <span>Figma</span>
+              <div class="skill-bar"><div class="skill-fill" data-w="78"></div></div>
+            </div>
+            <div class="skill-item" data-level="90">
+              <i class="fas fa-code"></i>
+              <span>VS Code</span>
+              <div class="skill-bar"><div class="skill-fill" data-w="90"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Soft Skills / Plus -->
+        <div class="skill-group reveal">
+          <h3 class="skill-group-title">
+            <i class="fas fa-star"></i> Outras competências
+          </h3>
+          <div class="skill-tags">
+            <span class="tag">UX Design</span>
+            <span class="tag">Design Responsivo</span>
+            <span class="tag">Documentação Técnica</span>
+            <span class="tag">Iniciação Científica</span>
+            <span class="tag">Liderança</span>
+            <span class="tag">Inglês Técnico</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROJETOS ===================== -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-label reveal">
+        <span>// 03</span> projetos
+      </div>
+      <h2 class="section-title reveal">O que eu <span class="accent">construí</span></h2>
+      <p class="section-sub reveal">Projetos reais, código que funciona para pessoas de verdade.</p>
+
+      <div class="projects-grid">
+
+        <!-- Card 1: Estágio atual (sem link, privado) -->
+        <article class="project-card reveal">
+          <div class="project-top">
+            <div class="project-icons">
+              <i class="fas fa-building-columns"></i>
+            </div>
+            <div class="project-links">
+              <span class="project-badge-private" title="Projeto privado — não publicado">
+                <i class="fas fa-lock"></i> privado
+              </span>
+            </div>
+          </div>
+          <h3 class="project-name">Novo Layout — Prefeitura de Campina Grande do Sul</h3>
+          <p class="project-desc">
+            Redesign completo do portal municipal com foco em UX e acessibilidade para o cidadão. 
+            Projeto em andamento no estágio atual — ainda não publicado.
+          </p>
+          <div class="project-tech">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>Front-End</span>
+          </div>
+        </article>
+
+        <!-- Card 2: UniCaronas -->
+        <article class="project-card reveal">
+          <div class="project-top">
+            <div class="project-icons">
+              <i class="fas fa-car"></i>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/arianearchanjo" target="_blank" rel="noopener" aria-label="Ver no GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-name">UniCaronas</h3>
+          <p class="project-desc">
+            Sistema web de caronas universitárias — conecta estudantes da mesma instituição para compartilhar 
+            trajetos de forma segura. Autenticação por e-mail institucional com JWT, chat em tempo real e sugestão de preço.
+          </p>
+          <div class="project-tech">
+            <span>Node.js</span>
+            <span>Express</span>
+            <span>PostgreSQL</span>
+            <span>JWT</span>
+            <span>HTML/CSS/JS</span>
+          </div>
+        </article>
+
+        <!-- Card 3: Busca de Perfil GitHub -->
+        <article class="project-card reveal">
+          <div class="project-top">
+            <div class="project-icons">
+              <i class="fab fa-github"></i>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/arianearchanjo" target="_blank" rel="noopener" aria-label="Ver no GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-name">Busca de Perfil no GitHub</h3>
+          <p class="project-desc">
+            Aplicação React que consome a API pública do GitHub para exibir nome, avatar e bio de qualquer usuário. 
+            Interface responsiva com tratamento de erros e transições suaves.
+          </p>
+          <div class="project-tech">
+            <span>React</span>
+            <span>Tailwind CSS</span>
+            <span>Vite</span>
+            <span>GitHub API</span>
+          </div>
+        </article>
+
+        <!-- Card 4: Controle de Estoque -->
+        <article class="project-card reveal">
+          <div class="project-top">
+            <div class="project-icons">
+              <i class="fas fa-boxes-stacked"></i>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/arianearchanjo" target="_blank" rel="noopener" aria-label="Ver no GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-name">Sistema de Controle de Estoque</h3>
+          <p class="project-desc">
+            Aplicação console em C# com CRUD de produtos, controle de entradas/saídas, relatórios gerenciais 
+            e persistência em CSV com escrita atômica para garantir integridade dos dados.
+          </p>
+          <div class="project-tech">
+            <span>C#</span>
+            <span>.NET</span>
+            <span>Console App</span>
+            <span>CSV</span>
+          </div>
+        </article>
+
+        <!-- Card 5: Jogo da Velha -->
+        <article class="project-card reveal">
+          <div class="project-top">
+            <div class="project-icons">
+              <i class="fas fa-gamepad"></i>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/arianearchanjo" target="_blank" rel="noopener" aria-label="Ver no GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-name">Jogo da Velha — Terminal</h3>
+          <p class="project-desc">
+            Jogo da Velha para console em C# com modos Jogador vs Jogador e Jogador vs Computador 
+            (dificuldades fácil e difícil), ranking dinâmico de partidas e interface 100% via teclado.
+          </p>
+          <div class="project-tech">
+            <span>C#</span>
+            <span>.NET</span>
+            <span>Console App</span>
+          </div>
+        </article>
+
+        <!-- Card 6: Wikipedia Redesign -->
+        <article class="project-card reveal">
+          <div class="project-top">
+            <div class="project-icons">
+              <i class="fas fa-globe"></i>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/arianearchanjo" target="_blank" rel="noopener" aria-label="Ver no GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-name">Wikipedia Redesign</h3>
+          <p class="project-desc">
+            Recriação do layout da Wikipedia com uma interface moderna e melhorada. 
+            Projeto do Bootcamp Front-End Santander — exercício de HTML, CSS e design de interfaces.
+          </p>
+          <div class="project-tech">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>Layout</span>
+            <span>Bootcamp Santander</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== EXPERIÊNCIA / FORMAÇÃO ===================== -->
+  <section class="experience section" id="experience">
+    <div class="container">
+      <div class="section-label reveal">
+        <span>// 04</span> experiência &amp; formação
+      </div>
+      <h2 class="section-title reveal">Minha <span class="accent">trajetória</span></h2>
+
+      <div class="timeline-wrap">
+
+        <!-- Timeline: Experiência -->
+        <div class="timeline-col reveal">
+          <h3 class="timeline-heading">
+            <i class="fas fa-briefcase"></i> Experiência
+          </h3>
+          <div class="timeline">
+
+            <div class="timeline-item active">
+              <div class="tl-dot"></div>
+              <div class="tl-content">
+                <span class="tl-date">Fev 2026 → atual</span>
+                <h4>Estagiária em Desenvolvimento Web</h4>
+                <p class="tl-company">Prefeitura de Campina Grande do Sul</p>
+                <p class="tl-desc">
+                  Portal municipal com foco em layout e UX. Trabalho direto com melhorias 
+                  visuais e de usabilidade em sistemas públicos usando Next.js, HTML, CSS e JS.
+                </p>
+                <div class="tl-tags">
+                  <span>Next.js</span><span>HTML/CSS</span><span>JavaScript</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="tl-dot"></div>
+              <div class="tl-content">
+                <span class="tl-date">Mai 2025 → Dez 2025</span>
+                <h4>Estagiária em TI</h4>
+                <p class="tl-company">Cidade Júnior</p>
+                <p class="tl-desc">
+                  Desenvolvimento full stack de sistemas internos. PostgreSQL, módulo financeiro 
+                  e documentação técnica.
+                </p>
+                <div class="tl-tags">
+                  <span>PostgreSQL</span><span>Full Stack</span><span>Documentação</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Timeline: Formação -->
+        <div class="timeline-col reveal">
+          <h3 class="timeline-heading">
+            <i class="fas fa-graduation-cap"></i> Formação
+          </h3>
+          <div class="timeline">
+
+            <div class="timeline-item active">
+              <div class="tl-dot"></div>
+              <div class="tl-content">
+                <span class="tl-date">2024 → 2028 (cursando)</span>
+                <h4>Bacharelado em Engenharia de Software</h4>
+                <p class="tl-company">Unibrasil</p>
+                <p class="tl-desc">
+                  3º semestre. Participação em iniciação científica com publicação nos 
+                  Anais do EVINCI 2025.
+                </p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="tl-dot"></div>
+              <div class="tl-content">
+                <span class="tl-date">2025</span>
+                <h4>Capacitação em Administração com TI</h4>
+                <p class="tl-company">Universidade Positivo</p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Conquistas -->
+          <div class="achievements">
+            <h3 class="timeline-heading" style="margin-top: 2rem;">
+              <i class="fas fa-trophy"></i> Reconhecimentos
+            </h3>
+            <ul class="achievement-list">
+              <li>
+                <span class="ach-icon">📄</span>
+                <div>
+                  <strong>Publicação Científica</strong>
+                  <small>Anais do EVINCI — Unibrasil (2025)</small>
+                </div>
+              </li>
+              <li>
+                <span class="ach-icon">🏅</span>
+                <div>
+                  <strong>OBMEP — 3× Menção Honrosa</strong>
+                  <small>2019, 2022, 2023</small>
+                </div>
+              </li>
+              <li>
+                <span class="ach-icon">👥</span>
+                <div>
+                  <strong>Liderança</strong>
+                  <small>Representante de turma · Monitora · Comissão de Formatura</small>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Linha do tempo em código -->
+      <div class="code-timeline reveal">
+        <div class="code-header">
+          <span class="code-dot red"></span>
+          <span class="code-dot yellow"></span>
+          <span class="code-dot green"></span>
+          <span class="code-filename">journey.log</span>
+        </div>
+        <pre class="code-body"><code><span class="c-year">2022</span>  <span class="c-arrow">→</span>  HTML e CSS. <span class="c-str">"Isso aqui muda de cor?"</span>
+<span class="c-year">2024</span>  <span class="c-arrow">→</span>  JavaScript, lógica, Git. As peças começam a encaixar.
+<span class="c-year">2025</span>  <span class="c-arrow">→</span>  Primeiro sistema real. Primeiro banco de dados. Primeira publicação.
+<span class="c-year">2026</span>  <span class="c-arrow">→</span>  Interfaces para gestão pública com Next.js.
+<span class="c-year">agora</span> <span class="c-arrow">→</span>  <span class="c-accent">Construindo. Quebrando. Consertando. Evoluindo.</span></code></pre>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================== CERTIFICAÇÕES ===================== -->
+  <section class="certs section" id="certs">
+    <div class="container">
+      <div class="section-label reveal">
+        <span>// 05</span> cursos & aprendizado
+      </div>
+      <h2 class="section-title reveal">Cursos <span class="accent">& aprendizado</span></h2>
+
+      <div class="certs-grid">
+        <div class="cert-card reveal">
+          <i class="fas fa-book-open"></i>
+          <div>
+            <strong>Bootcamp Front-End Santander</strong>
+            <span>DIO</span>
+          </div>
+        </div>
+        <div class="cert-card reveal">
+          <i class="fas fa-book-open"></i>
+          <div>
+            <strong>JavaScript</strong>
+            <span>Curso em Vídeo · 40h</span>
+          </div>
+        </div>
+        <div class="cert-card reveal">
+          <i class="fas fa-book-open"></i>
+          <div>
+            <strong>HTML5 e CSS3</strong>
+            <span>Curso em Vídeo · 40h</span>
+          </div>
+        </div>
+        <div class="cert-card reveal">
+          <i class="fas fa-book-open"></i>
+          <div>
+            <strong>Algoritmos</strong>
+            <span>Curso em Vídeo · 40h</span>
+          </div>
+        </div>
+        <div class="cert-card reveal">
+          <i class="fas fa-book-open"></i>
+          <div>
+            <strong>UX Design</strong>
+            <span>Alura + Santander</span>
+          </div>
+        </div>
+        <div class="cert-card reveal">
+          <i class="fas fa-book-open"></i>
+          <div>
+            <strong>Fundamentos de Dev Web</strong>
+            <span>IBM SkillsBuild · 12h</span>
+          </div>
+        </div>
+        <div class="cert-card reveal">
+          <i class="fas fa-book-open"></i>
+          <div>
+            <strong>Imersão Dev com Google Gemini</strong>
+            <span>Alura</span>
+          </div>
+        </div>
+        <div class="cert-card reveal">
+          <i class="fas fa-book-open"></i>
+          <div>
+            <strong>Versionamento Git e GitHub</strong>
+            <span>Curso</span>
+          </div>
+        </div>
+        <div class="cert-card reveal">
+          <i class="fas fa-book-open"></i>
+          <div>
+            <strong>Bootcamp IA na Prática</strong>
+            <span>Caixa + DIO</span>
+          </div>
+        </div>
+        <div class="cert-card reveal">
+          <i class="fas fa-book-open"></i>
+          <div>
+            <strong>Redes de Computadores</strong>
+            <span>Fundação Bradesco · 15h</span>
+          </div>
+        </div>
+        <!-- Em andamento -->
+        <div class="cert-card cert-wip reveal">
+          <i class="fas fa-spinner fa-pulse"></i>
+          <div>
+            <strong>Bootcamp Node.js</strong>
+            <span>DIO · em andamento</span>
+          </div>
+        </div>
+        <div class="cert-card cert-wip reveal">
+          <i class="fas fa-spinner fa-pulse"></i>
+          <div>
+            <strong>Formação Front End</strong>
+            <span>Udemy · 52h · em andamento</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTATO ===================== -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-label reveal">
+        <span>// 06</span> contato
+      </div>
+      <h2 class="section-title reveal">Vamos <span class="accent">conversar?</span></h2>
+      <p class="section-sub reveal">
+        Estou aberta a novas oportunidades, projetos e colaborações.<br>
+        Me manda uma mensagem!
+      </p>
+
+      <div class="contact-grid">
+        <div class="contact-links reveal">
+          <a href="https://www.linkedin.com/in/ariane-archanjo/" target="_blank" rel="noopener" class="contact-card">
+            <div class="contact-icon linkedin">
+              <i class="fab fa-linkedin-in"></i>
+            </div>
+            <div class="contact-info">
+              <strong>LinkedIn</strong>
+              <span>ariane-archanjo</span>
+            </div>
+            <i class="fas fa-arrow-right contact-arrow"></i>
+          </a>
+
+          <a href="https://github.com/arianearchanjo" target="_blank" rel="noopener" class="contact-card">
+            <div class="contact-icon github">
+              <i class="fab fa-github"></i>
+            </div>
+            <div class="contact-info">
+              <strong>GitHub</strong>
+              <span>arianearchanjo</span>
+            </div>
+            <i class="fas fa-arrow-right contact-arrow"></i>
+          </a>
+
+          <a href="/cdn-cgi/l/email-protection#f293809b939c97dc9380919a939c989dc3b2959f939b9edc919d9f" class="contact-card">
+            <div class="contact-icon gmail">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="contact-info">
+              <strong>E-mail</strong>
+              <span><span class="__cf_email__" data-cfemail="29485b4048474c07485b4a414847434618694e44484045074a4644">[email&#160;protected]</span></span>
+            </div>
+            <i class="fas fa-arrow-right contact-arrow"></i>
+          </a>
+        </div>
+
+        <div class="contact-message reveal">
+          <div class="msg-card">
+            <div class="msg-header">
+              <i class="fas fa-terminal"></i>
+              <span>mensagem.txt</span>
+            </div>
+            <div class="msg-body">
+              <p>Olá! Estou disponível para:</p>
+              <ul>
+                <li><i class="fas fa-check"></i> Projetos freelance</li>
+                <li><i class="fas fa-check"></i> Colaborações open-source</li>
+                <li><i class="fas fa-check"></i> Trocar uma ideia sobre tech</li>
+              </ul>
+              <a href="/cdn-cgi/l/email-protection#0a6b78636b646f246b7869626b6460653b4a6d676b636624696567" class="btn btn-primary" style="margin-top: 1.5rem; width: 100%; justify-content: center;">
+                <i class="fas fa-paper-plane"></i> Enviar mensagem
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+   <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <a href="#hero" class="nav-logo">
+          <span class="logo-bracket">[</span>AA<span class="logo-bracket">]</span>
+        </a>
+        <p>Feito com <span class="accent">♥</span> por Ariane Archanjo &mdash; <span id="year"></span></p>
+        <div class="footer-socials">
+          <a href="https://github.com/arianearchanjo" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/ariane-archanjo/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="mailto:ariane.archanjo1@gmail.com" aria-label="E-mail"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================== BACK TO TOP ===================== -->
+  <button class="back-top" id="backTop" aria-label="Voltar ao topo">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
