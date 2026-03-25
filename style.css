@@ -30,7 +30,7 @@
   /* Espaços & arredondamentos */
   --radius:   12px;
   --radius-sm: 6px;
-  --section-gap: 7rem;
+  --section-gap: 5rem;
 
   /* Transições */
   --ease: cubic-bezier(0.16, 1, 0.3, 1);
